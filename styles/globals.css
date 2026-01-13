@@ -36,7 +36,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 0;
 }
 
-/* Neon Cyberpunk (Default) */
+/* Cyberpunk Dark (Default) */
 [data-theme='0'] {
   --bg: #0a0b1e;
   --secondary: rgba(255, 255, 255, 0.1);
@@ -58,8 +58,30 @@ body::-webkit-scrollbar-thumb:hover {
   --shadow-glow: 0 0 20px rgba(0, 243, 255, 0.4);
 }
 
-/* Glass Nature */
+/* Cyberpunk Light */
 [data-theme='1'] {
+  --bg: #f0f2f5;
+  --secondary: rgba(0, 0, 0, 0.05);
+  --tertiary: #e1e4e8;
+  --primary: #2d00f7; /* Deep Neon Blue */
+  --highlight: #f20089; /* Deep Neon Pink */
+  --error: #d90429;
+
+  --fast: #2d00f7;
+  --normal: #f20089;
+  --slow: #d90429;
+
+  --island-bg: rgba(255, 255, 255, 0.7);
+  --island-fg: #2d00f7;
+  --island-border: 1px solid rgba(45, 0, 247, 0.2);
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: 1px solid rgba(0, 0, 0, 0.1);
+
+  --shadow-glow: 0 0 15px rgba(45, 0, 247, 0.2);
+}
+
+/* Glass Nature */
+[data-theme='2'] {
   --bg: #0f1c15;
   --secondary: rgba(255, 255, 255, 0.1);
   --tertiary: #1a2f24;
@@ -81,7 +103,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* Midnight Void */
-[data-theme='2'] {
+[data-theme='3'] {
   --bg: #000000;
   --secondary: #1a1a1a;
   --tertiary: #333333;

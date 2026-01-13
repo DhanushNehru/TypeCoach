@@ -11,9 +11,11 @@ import { useData } from '../hooks/useData'
 import { useKeys } from '../hooks/useKeys'
 import { useTypingStarted } from '../hooks/useTyping'
 import { useLocalStorage } from '../lib/localStorage'
+import { useState } from 'react'
 
 const Home: NextPage = () => {
   const [state, dispatch] = useAppState()
+  const [hasStarted, setHasStarted] = useState(false)
 
   const targetKey =
     state.words.length === 0
@@ -21,12 +23,28 @@ const Home: NextPage = () => {
       : state.words[state.progress.wordIndex][state.progress.charIndex]
 
   // ignore typing when dynamic island is expanded
-  const ignoreTyping = state.showThemes || state.showDataSelector
+  const ignoreTyping = state.showThemes || state.showDataSelector || !hasStarted
 
   useData(state.dataName, dispatch)
   useKeys(targetKey, dispatch, state.soundEnabled, state.soundPack, ignoreTyping)
   useTypingStarted(state.typingStarted)
   useLocalStorage(state)
+
+  if (!hasStarted) {
+    return (
+      <div className={styles.container}>
+        {AppHead}
+        <Nav />
+        <div className={styles.landing}>
+          <h1 className={styles.title}>TypeCoach</h1>
+          <p className={styles.subtitle}>Master the Art of Typing</p>
+          <button className={styles.startBtn} onClick={() => setHasStarted(true)}>
+            Start Typing
+          </button>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className={styles.container}>

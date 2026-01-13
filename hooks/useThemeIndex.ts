@@ -7,9 +7,8 @@ import { useState } from 'react'
 // if nothing works - set bg anyway
 
 export const themes = [
-  { name: 'Neon Cyberpunk', bar: '#0a0b1e' }, // 0
-  { name: 'Glass Nature', bar: '#0f1c15' }, // 1
-  { name: 'Midnight Void', bar: '#000000' }, // 2
+  { name: 'Dark', bar: '#0a0b1e' }, // 0
+  { name: 'Light', bar: '#f0f2f5' } // 1
 ]
 
 function getInitialTheme() {

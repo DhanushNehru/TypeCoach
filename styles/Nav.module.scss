@@ -32,3 +32,19 @@
   letter-spacing: 0.1em;
   text-transform: lowercase;
 }
+
+.themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+
+  &:hover {
+    color: var(--primary);
+    --icon: var(--primary);
+  }
+}
