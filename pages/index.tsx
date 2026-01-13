@@ -59,15 +59,15 @@ const Home: NextPage = () => {
 
 const AppHead = (
   <Head>
-    <title> typecoach </title>
-    <meta name="theme-color" content="#171212" />
+    <title>NeonKey</title>
+    <meta name="theme-color" content="#0a0b1e" />
     <meta
       name="description"
-      content="Fast and Minimal Typing App - Improve your typing speed."
+      content="NeonKey - The Premium Cyberpunk Typing Experience."
     />
     <meta
       name="keywords"
-      content="typecoach, typing app, practice typing, simple typing app, improve typing speed"
+      content="neonkey, typecoach, typing app, practice typing, cyberpunk, glassmorphism, neon"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </Head>

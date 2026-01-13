@@ -11,6 +11,10 @@
   align-items: center;
   border-radius: 34px;
   background: var(--island-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--island-border);
+  box-shadow: var(--shadow-glow);
   padding: 0.5em 2em;
   z-index: 50;
   min-width: 280px;
@@ -46,6 +50,10 @@
   top: 30px;
   left: 50%;
   background: var(--island-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: var(--island-border);
+  box-shadow: var(--shadow-glow);
   border-radius: 14px;
   color: var(--island-fg);
   z-index: 50;

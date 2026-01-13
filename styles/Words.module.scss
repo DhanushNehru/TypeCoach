@@ -13,6 +13,13 @@
   z-index: 1;
 
   // only fade bottom
+  mask-image: linear-gradient(
+    to top,
+    transparent 1.5em,
+    black,
+    black calc(100% - 1.5em),
+    black
+  );
   -webkit-mask-image: -webkit-linear-gradient(
     bottom,
     transparent 1.5em,
@@ -44,6 +51,13 @@
 // fade both top and bottom when typing is started so that if scrolling is not done properly
 // the text is not cut off at the top
 :global(body.typing) .wordsWrapper {
+  mask-image: linear-gradient(
+    to top,
+    transparent 1.5em,
+    black,
+    black calc(100% - 1.5em),
+    transparent
+  );
   -webkit-mask-image: -webkit-linear-gradient(
     bottom,
     transparent 1.5em,
@@ -103,6 +117,7 @@
 // active word character
 .word.current .character:not(.error) {
   color: var(--primary);
+  text-shadow: 0 0 10px var(--primary);
 }
 
 // typed character
@@ -119,6 +134,7 @@
   60% {
     background: var(--primary);
     color: var(--bg);
+    box-shadow: 0 0 10px var(--primary);
   }
   70%,
   100% {
