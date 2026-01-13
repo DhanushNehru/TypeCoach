@@ -9,7 +9,6 @@ A modern, minimal typing practice application designed to improve your speed and
 - **Performance Tracking**: Real-time statistics for words per minute (WPM), accuracy, and error tracking.
 - **Visual Feedback**: Dynamic glow effects and glassmorphism elements enhance the user experience.
 - **Offline Capable**: Works without an internet connection after initial load.
-
 ## Getting Started
 
 1. Clone the repository.
