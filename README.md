@@ -2,6 +2,8 @@
 
 A modern, minimal typing practice application designed to improve your speed and accuracy.
 
+<a href="https://www.producthunt.com/products/typecoach?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-typecoach" target="_blank" rel="noopener noreferrer"><img alt="TypeCoach - Typing trainer with live speed, accuracy and style. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1062467&amp;theme=light&amp;t=1768726985236"></a>
+
 ## Features
 
 - **Minimalist Design**: A clean, distraction-free interface with a premium cyberpunk aesthetic.
