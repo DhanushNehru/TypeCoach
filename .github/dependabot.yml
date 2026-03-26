@@ -1,0 +1,20 @@
+version: 2
+updates:
+  # App dependencies (package.json + yarn.lock)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # Also covers security alerts for these manifests
+    open-pull-requests-limit: 10
+    # Optional: only patch/minor to reduce breakage
+    allow:
+      - dependency-type: "direct"
+      - dependency-type: "all"
+    versioning-strategy: "auto"
+
+  # GitHub Actions workflow updates
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
